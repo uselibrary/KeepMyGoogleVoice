@@ -13,7 +13,7 @@ KeepMyGoogleVoice是使用Python脚本自动发送短信给cloudflare来实现�
 ### 一键脚本如下，安装过程中需要输入google账号和密码。
 
 ```
-wget --no-check-certificate -O gv.sh https://raw.githubusercontent.com/uselibrary/KeepMyGoogleVoice/master/gv.sh && chmod +x && bash gv.sh
+wget --no-check-certificate -O gv.sh https://raw.githubusercontent.com/uselibrary/KeepMyGoogleVoice/master/gv.sh && chmod +x gv.sh && bash gv.sh
 ```
 
 完成安装后，手动将你的账号和密码输入到`/root/gv.py`中，具体位置如如下：
@@ -32,4 +32,18 @@ voice.login(email='xxxxx@gmail.com', passwd='xxxxx')
 
 ```
 wget --no-check-certificate -O gv.py https://raw.githubusercontent.com/uselibrary/KeepMyGoogleVoice/master/gv.py && chmod +x gv.py
+```
+
+并且，对于CentOS 7 执行一下命令
+```
+yum -y install epel-release
+yum -y install python python-pip
+pip install googlevoice
+```
+
+对于Debian 9/Ubuntu 16.04+ 执行一下命令
+```
+apt install python3
+apt install python3-pip
+pip3 install googlevoice
 ```
