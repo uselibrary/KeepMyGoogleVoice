@@ -34,14 +34,14 @@ voice.login(email='xxxxx@gmail.com', passwd='xxxxx')
 wget --no-check-certificate -O gv.py https://raw.githubusercontent.com/uselibrary/KeepMyGoogleVoice/master/gv.py && chmod +x gv.py
 ```
 
-并且，对于CentOS 7 执行一下命令
+并且，对于CentOS 7 执行以下命令
 ```
 yum -y install epel-release
 yum -y install python python-pip
 pip install googlevoice
 ```
 
-对于Debian 9/Ubuntu 16.04+ 执行一下命令
+对于Debian 9/Ubuntu 16.04+ 执行以下命令
 ```
 apt install python3
 apt install python3-pip
