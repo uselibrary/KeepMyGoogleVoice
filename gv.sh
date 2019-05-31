@@ -28,3 +28,6 @@ else
   echo "OS is not supported"
   echo "Please install gv.py manually"
 fi
+#finished
+echo "Please input you email and passwords into /etc/gv.py"
+echo "Finished"
