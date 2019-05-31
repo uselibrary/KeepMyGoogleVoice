@@ -2,9 +2,9 @@
 
 
 
-KeepMyGoogleVoice是使用Python脚本自动发送短信给cloudflare来实现保活Google Voice。默认情况下，将发送一条短信到`8336721001`查询`baidu.com`的IP。如果你想修改，可以在执行完一键脚本后，更改`/root/gv.py`中的`phoneNumber`和`text`内容。
+KeepMyGoogleVoice是使用Python脚本自动发送短信给cloudflare来实现保活Google Voice。默认情况下，将发送一条短信到`8336721001`查询`cloudflare.com`的IP。如果你想修改，可以在执行完一键脚本后，更改`/root/gv.py`中的`phoneNumber`和`text`内容。
 
-支持的系统版本：CentOS 7/Debain 9/Ubuntu 16.04+
+支持的系统版本：Debain 9/Ubuntu 16.04+/CentOS 7(不建议CentOS 7，可能存在兼容性问题。任意方法都无法登录Google Voice，可前往https://accounts.google.com/DisplayUnlockCaptcha检查是否开启了安全验证。)
 
 执行此脚本后，对于CentOS 7将自动安装python和python-pip；对于Debain 9/Ubuntu 18.04+将自动安装python3和python3-pip。
 
