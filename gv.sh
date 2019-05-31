@@ -15,19 +15,20 @@ echo -e "Prepare the environment."
 if cat /etc/*-release | grep -Eqi "centos|red hat|redhat"; then
   echo "RPM-based"
   yum -y install epel-release
-  yum -y install python python-pip
-  pip install googlevoice
-  echo -ne '\n0 0 1 * * root python /root/gv.py \n\n' >>/etc/crontab
+  yum -y install python36
+  yum -y install python36-setuptools
+  easy_install-3.6 pip
+  pip3 -y install googlevoice
 elif cat /etc/*-release | grep -Eqi "debian|ubuntu"; then
   echo "Debian-based"
   apt install python3
   apt install python3-pip
   pip3 install googlevoice
-  echo -ne '\n0 0 1 * * root python3 /root/gv.py \n\n' >>/etc/crontab
 else
   echo "OS is not supported"
   echo "Please install gv.py manually"
 fi
 #finished
+echo -ne '\n0 0 1 * * root python3 /root/gv.py \n\n' >>/etc/crontab
 echo "Please input you email and passwords into /etc/gv.py"
 echo "Finished"
