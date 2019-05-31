@@ -19,7 +19,7 @@ wget --no-check-certificate -O gv.sh https://raw.githubusercontent.com/uselibrar
 完成安装后，手动将你的账号和密码输入到`/root/gv.py`中，具体位置如如下：
 
 ```
-voice.login(email='xxxxx@gmail.com', passwd='xxxxx')
+voice.login(email="xxx@gmail.com", passwd="xxx")
 ```
 
 
@@ -37,8 +37,10 @@ wget --no-check-certificate -O gv.py https://raw.githubusercontent.com/uselibrar
 并且，对于CentOS 7 执行以下命令
 ```
 yum -y install epel-release
-yum -y install python python-pip
-pip install googlevoice
+yum -y install python36
+yum -y install python36-setuptools
+easy_install-3.6 pip
+pip3 -y install googlevoice
 ```
 
 对于Debian 9/Ubuntu 16.04+ 执行以下命令
