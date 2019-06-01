@@ -18,7 +18,7 @@ if cat /etc/*-release | grep -Eqi "centos|red hat|redhat"; then
   yum -y install python36
   yum -y install python36-setuptools
   easy_install-3.6 pip
-  pip3 -y install googlevoice
+  pip3 install googlevoice
 elif cat /etc/*-release | grep -Eqi "debian|ubuntu"; then
   echo "Debian-based"
   apt install python3
