@@ -13,7 +13,7 @@ If you can't log in Google Voice by any means, especially when the feedback like
 
 
 
-### One-Click Script, Google account and password is needed.
+### One-Click Script, Google account and password are needed.
 
 
 
@@ -29,7 +29,7 @@ voice.login(email="xxx@gmail.com", passwd="xxx")
 
 
 
-### Only see this when One-Click Script does not work.
+### Only view here when One-Click Script does not work.
 
 
 
@@ -52,5 +52,3 @@ apt install python3-pip
 pip3 install googlevoice
 wget --no-check-certificate -O gv.py https://raw.githubusercontent.com/uselibrary/KeepMyGoogleVoice/master/gv.py && chmod +x gv.py
 ```
-
-

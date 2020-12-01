@@ -20,7 +20,7 @@ wget --no-check-certificate -O gv.sh https://raw.githubusercontent.com/uselibrar
 voice.login(email="xxx@gmail.com", passwd="xxx")
 ```
 
-## 仅当一键脚本无法正常使用是才参考此项
+## 仅当一键脚本无法正常使用时才参考此项
 
 如果上述一脚脚本无法执行，可以手动安装。执行以下命令，手动输入Google账号和密码，并通过crontab将其设置为每月执行一次。
 
