@@ -1,0 +1,13 @@
+[Unit]
+Description=Google Voice Service
+After=multi-user.target
+
+[Service]
+WorkingDirectory=/etc/googlevoice
+User=root
+Type=idle
+ExecStart=/usr/bin/python3 /etc/googlevoice/fot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

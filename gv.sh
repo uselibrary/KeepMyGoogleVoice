@@ -35,3 +35,9 @@ echo "Please input you email and passwords into /etc/gv.py"
 echo "Finished"
 
 #a systemd service will replaces crontab to achieve better performance soon
+#mkdir /etc/googlevoice
+#cd /etc/googlevoice
+#wget --no-check-certificate -O gv.py https://raw.githubusercontent.com/uselibrary/KeepMyGoogleVoice/master/gv.py && chmod +x gv.py
+#cd /etc/systemd/system/
+#wget --no-check-certificate -O googlevoice.service https://raw.githubusercontent.com/uselibrary/KeepMyGoogleVoice/master/googlevoice.service && chmod +x googlevoice.service
+#systemctl enable googlevoice.service
