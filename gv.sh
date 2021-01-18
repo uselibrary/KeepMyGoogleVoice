@@ -5,7 +5,7 @@ echo "    ################################################"
 echo "    #                                              #"
 echo "    #              KeepMyGoogleVoice               #"
 echo "    #                https://pa.ci                 #"
-echo "    #                 Version 0.1                  #"
+echo "    #                 Version 0.2                  #"
 echo "    ################################################"
 #download
 wget --no-check-certificate -O gv.py https://raw.githubusercontent.com/uselibrary/KeepMyGoogleVoice/master/gv.py && chmod +x gv.py
@@ -33,3 +33,5 @@ fi
 echo -ne '\n0 0 1 * * root python3 /root/gv.py \n\n' >>/etc/crontab
 echo "Please input you email and passwords into /etc/gv.py"
 echo "Finished"
+
+#a systemd service will replaces crontab to achieve better performance soon
