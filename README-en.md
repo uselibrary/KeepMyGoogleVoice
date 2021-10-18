@@ -52,3 +52,5 @@ apt install python3-pip
 pip3 install googlevoice
 wget --no-check-certificate -O gv.py https://raw.githubusercontent.com/uselibrary/KeepMyGoogleVoice/master/gv.py && chmod +x gv.py
 ```
+
+For professional users, the script provides `systemd` mode (that is, daemon process), and the default mode uses `crontab` to run at boot.

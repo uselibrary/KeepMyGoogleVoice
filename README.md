@@ -43,3 +43,5 @@ apt install python3-pip
 pip3 install googlevoice
 wget --no-check-certificate -O gv.py https://raw.githubusercontent.com/uselibrary/KeepMyGoogleVoice/master/gv.py && chmod +x gv.py
 ```
+
+对于专业用户，脚本提供了以`systemd`模式运行（即进程守护），默认则是使用`crontab`在系统启动时启动。

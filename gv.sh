@@ -30,11 +30,14 @@ else
   echo "OS is not supported"
   echo "Please install gv.py manually"
 fi
-#finished
+
+#service
+# runing mode [crontab]
 echo -ne '\n0 0 1 * * root python3 /root/gv.py \n\n' >>/etc/crontab
 echo "Please input you email and passwords into /etc/gv.py"
 echo "Finished"
 
+# runing mode [systemd]
 #a systemd service will replaces crontab to achieve better performance soon
 #mkdir /etc/googlevoice
 #cd /etc/googlevoice
