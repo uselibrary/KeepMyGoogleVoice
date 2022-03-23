@@ -4,6 +4,8 @@
 
 KeepMyGoogleVoice是使用Python脚本自动发送短信给cloudflare来实现保活Google Voice。默认情况下，将发送一条短信到`8336721001`查询`cloudflare.com`的IP。如果你想修改，可以在执行完一键脚本后，更改`/root/gv.py`中的`phoneNumber`和`text`内容。
 
+更新：`8336721001`号码已经失效，你可以更改`phoneNumber`为其他号码以及`text`为其他内容。
+
 支持的系统版本：Debain 9/Ubuntu 16.04+/CentOS 7（不建议CentOS 7，可能存在兼容性问题。）
 
 任意方法都无法登录Google Voice，尤其是当出现`googlevoice.util.LoginError`类似错误提示，建议前往<https://accounts.google.com/DisplayUnlockCaptcha> 检查是否开启了安全验证，而导致的账号被风控。
