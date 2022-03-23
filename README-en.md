@@ -5,7 +5,7 @@
 KeepMyGoogleVoice is a simple Python script to automatically send text messages to cloudflare to keep Google Voice alive. By default, a text message will be sent to  `8336721001` to query `cloudflare.com`'s IP.
 If you want to modify it, please change the `phoneNumber` and `text` contents in `/root/gv.py` after executing this script.
 
-
+Update: the bumner 8336721001 is expired, you can modify the contents of `phoneNumber` and `text`.
 
 Supported: Debian 9/Ubuntu 16.04+/CentOS7  (CentOS 7 is not recommended, there may be compatibility issues.)
 
